@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FB Blocker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="header">
+            <h1 class="title">FB Blocker</h1>
+        </header>
+        <main class="content">
+            <div class="status-container">
+                <div id="statusIndicator" class="indicator"></div>
+                <span id="statusText" class="status-text">Loading...</span>
+            </div>
+            <div class="alert">
+                <strong>Warning</strong> This Feature Under Maintenance, Please Turn Of Manually
+              </div>
+            <button id="toggleButton" class="toggle-button">Toggle Blocking</button>
+            <div id="confirmation" class="confirmation hidden">
+                <p>Please type the following to confirm:</p>
+                <p id="confirmationText" class="no-copy">i promise to be productive after this</p>                <input type="text" id="confirmationInput" placeholder="Type here...">
+                <button id="confirmButton" class="confirm-button">Confirm</button>
+            </div>
+        </main>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
